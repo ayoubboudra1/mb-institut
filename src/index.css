@@ -43,7 +43,7 @@ header .all-card{
   width: 100%;
 }
 header .card{
-  background-color: white;
+  background-color: red;
   
   width: 250px;
   height: 100px;
@@ -55,11 +55,7 @@ header .card{
   align-items: center;
   position: relative;
 }
-@media print {
-  header .card {
-    background-color: #FFF;
-  }
-}
+
 
 header .card .icon{
   /* background-color: #f1f1f1; */
