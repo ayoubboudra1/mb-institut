@@ -127,7 +127,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
                             <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
                           </svg>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content" style={{backgroundColor:'white'}}>
                         <h6>Date de début :</h6>
                         <h5>{dateFin?convertDateFormat(dateDebut):''}</h5>
                     </div>
@@ -138,7 +138,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
                             <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
                           </svg>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content" style={{backgroundColor:'white'}}>
                         <h6>Date de fin :</h6>
                         <h5>{dateFin?convertDateFormat(dateFin):''}</h5>
                     </div>
@@ -154,7 +154,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
                         <h5>{calculateSumOfHeureAndMin()}</h5>
                     </div>
                 </div>
-                <div class="card flex justify-content-center" style={{boxShadow: '0 0 10px rgba(0,0,0,0.1)',backgroundColor:'white'}}>
+                <div class="card flex justify-content-center" style={{backgroundColor:'white'}}>
                    <img src="/logo_MB.png" width='140px' />
                 </div>
             </div>
