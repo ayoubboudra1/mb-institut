@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
-import ModalComponents from "./components/Modal";
-import { Table } from "react-bootstrap";
+import { useState } from "react";
+
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 import PDF from "./PDF";

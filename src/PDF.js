@@ -26,6 +26,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
       value.listFormation.map((formationValue) => {
         sumHeure += parseInt(formationValue.heure)
         sumMin += parseInt(formationValue.min)
+        return null
       })
     })
     sumHeure += Math.floor(sumMin / 60)
