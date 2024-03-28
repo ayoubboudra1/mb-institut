@@ -28,6 +28,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
         sumMin += parseInt(formationValue.min)
         return null
       })
+      return null
     })
     sumHeure += Math.floor(sumMin / 60)
     sumMin = sumMin % 60
@@ -44,6 +45,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
       case 'Prenom': setPrenom(event.target.value);break;
       case 'Debut': setDateDebut(event.target.value);break;
       case 'Fin': setDateFin(event.target.value);break;
+      default: break;
     }
   };
 
@@ -156,7 +158,7 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
                     </div>
                 </div>
                 <div class="card flex justify-content-center" style={{boxShadow: '0 0 10px rgba(0,0,0,0.1)',backgroundColor:'white'}}>
-                   <img src="/logo_MB.png" width='140px' />
+                   <img src="/logo_MB.png" width='140px' alt="mb_institus" />
                 </div>
             </div>
           </header>
@@ -169,13 +171,13 @@ function PDF({downloadPdf,index,setListData,listData,deleteMois}) {
               {
               listData
               .filter((value) => value.index === index)
-              .map((value,index) =>
-              <div key={index}>
+              .map((value,i) =>
+              <div key={i}>
               <div  style={{margin:'0px 20px',height:'35px',display:'flex',padding:'5px 10px',borderRadius:'5px'}}>
-                <p style={{color:'white',margin:'0',width:'75%',fontSize:'15px',fontWeight:'600',color:'black'}}>
+                <p style={{margin:'0',width:'75%',fontSize:'15px',fontWeight:'600',color:'black'}}>
                   {value.mois} {value.annee}
                 </p>
-                <p style={{color:'white',margin:'0',width:'25%',textAlign:'right',fontSize:'15px',fontWeight:'600',color:'black'}}>{value.sumOfHeureAndMin}</p>
+                <p style={{margin:'0',width:'25%',textAlign:'right',fontSize:'15px',fontWeight:'600',color:'black'}}>{value.sumOfHeureAndMin}</p>
               </div>
                 
               {

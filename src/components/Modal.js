@@ -10,8 +10,6 @@ function ModalComponet({listData,setListData,index}) {
         register,
         handleSubmit,
         setValue,
-        watch,
-        formState: { errors },
       } = useForm()
     
     const onSubmit = (data) => {
@@ -29,7 +27,7 @@ function ModalComponet({listData,setListData,index}) {
     }
 
     const deleteLine = (titre) => {
-        setList(prev => prev.filter(value =>  value.titre != titre))
+        setList(prev => prev.filter(value =>  value.titre !== titre))
     }
     const sumOfHeureAndMin = (list) => {
         let sumHeure = 0

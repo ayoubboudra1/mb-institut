@@ -48,7 +48,7 @@ function App() {
   const deletePage = (index) => {
     console.log('delete',index)
     setListRef(prev => {
-      return prev.filter(value => value != index)
+      return prev.filter(value => value !== index)
     })
   }
 
