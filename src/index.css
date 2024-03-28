@@ -42,7 +42,7 @@ header .all-card{
   justify-content: center;
   width: 100%;
 }
-header .card{
+header .myCard{
   background-color: white;
   
   width: 250px;
@@ -61,7 +61,7 @@ header .card{
   }
 }
 
-header .card .icon{
+header .myCard .icon{
   /* background-color: #f1f1f1; */
   color: white;
   width: 50px;
