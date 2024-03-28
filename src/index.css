@@ -43,7 +43,7 @@ header .all-card{
   width: 100%;
 }
 header .card{
-  background-color: red;
+ 
   
   width: 250px;
   height: 100px;
@@ -72,7 +72,7 @@ header .card .icon{
 header .card-content h6{
   font-size: 12px;
   font-weight: 500;
-  color:#838282;
+  /* color:#838282; */
   margin-top: 10px;
 }
 header .card-content h5{
