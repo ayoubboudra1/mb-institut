@@ -82,10 +82,10 @@ function PDF2({downloadPdf,index,listData,setListData,deletePage,deleteMois}) {
               .map((value,index) =>
               <div key={index}>
               <div  style={{margin:'0px 20px',height:'35px',display:'flex',padding:'5px 10px',borderRadius:'5px'}}>
-                <p style={{color:'white',margin:'0',width:'75%',fontSize:'15px',fontWeight:'600',color:'black'}}>
+                <p style={{margin:'0',width:'75%',fontSize:'15px',fontWeight:'600',color:'black'}}>
                   {value.mois} {value.annee}
                 </p>
-                <p style={{color:'white',margin:'0',width:'25%',textAlign:'right',fontSize:'15px',fontWeight:'600',color:'black'}}>{value.sumOfHeureAndMin}</p>
+                <p style={{margin:'0',width:'25%',textAlign:'right',fontSize:'15px',fontWeight:'600',color:'black'}}>{value.sumOfHeureAndMin}</p>
               </div>
                 
               {
