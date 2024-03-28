@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.bg--red{
+  background-color:#f65a5c;
+}
+.bg--bleu{
+  background-color:#4eb6fd;
+}
+header{
+  background-image: url("../public/abstract-textured-backgound.jpg");
+  color: white;
+  text-align: center;
+  padding: 90px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* position: relative; */
+
+}
+header h2{
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  top:30px; left: 100px;
+}
+header h1{
+  font-size: 26px;
+  font-weight: 700;
+  position: absolute;
+  top: 60px; left: 100px;
+}
+header .all-card{
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  margin: 40px 0;
+  display: flex;
+  gap:25px;  
+  justify-content: center;
+  width: 100%;
+}
+header .card{
+  background-color: white;
+  
+  width: 250px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* display: flex; */
+  gap: 5px;
+  align-items: center;
+  position: relative;
+}
+header .card .icon{
+  /* background-color: #f1f1f1; */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:-25px; left: 56px;
+}
+header .card-content h6{
+  font-size: 12px;
+  font-weight: 500;
+  color:#838282;
+  margin-top: 10px;
+}
+header .card-content h5{
+  font-size: 20px;
+  font-weight: 700;
+  color:#1f1f1f;
+  margin-top: 7px;
+}
