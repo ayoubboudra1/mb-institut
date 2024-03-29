@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import html2canvas from 'html2canvas'
+import domToImage from 'dom-to-image';
 import jsPDF from 'jspdf'
 import PDF from "./PDF";
 import PDF2 from "./PDF_2";
@@ -40,11 +41,21 @@ function App() {
         pdf.addImage(imgData,'PNG',imgX,imgY, imgWidth*ratio, imgHeigth*ratio);
         // pdf.save('new.pdf')
 
-        const image = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream"); // This prompts the user to save it as a file
-        const link = document.createElement('a');
-        link.download = 'canvas-image.png';
-        link.href = image;
-        link.click();
+        // const image = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream"); // This prompts the user to save it as a file
+        // const link = document.createElement('a');
+        // link.download = 'canvas-image.png';
+        // link.href = image;
+        // link.click();
+
+        domToImage.toPng(input)
+        .then((dataUrl) => {
+          const pdf = new jsPDF();
+          pdf.addImage(dataUrl, 'PNG', 0, 0);
+          pdf.save("download.pdf");
+        })
+        .catch((error) => {
+          console.error('oops, something went wrong!', error);
+        });
       })
   }
 
