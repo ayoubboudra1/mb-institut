@@ -124,7 +124,7 @@ function PDF({ downloadPdf, index, setListData, listData, deleteMois }) {
               <h2 style={{ fontSize: '16px', fontWeight: '700', position: 'absolute', top: '30px', left: '100px' }}>Temps De Formation</h2>
               <h1 style={{ fontSize: '26px', fontWeight: '700', position: 'absolute', top: '60px', left: '100px' }}>{nom.toUpperCase()} {prenom}</h1>
               <div class="all-card" style={{ position: 'absolute', left: '0', top: '70px', padding: '20px', margin: '40px 0', display: 'flex', gap: '25px', justifyContent: 'center', width: '100%' }}>
-                <div class="" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.1)', backgroundColor: '#fffffe' }}>
+                <div class="card" style={{ boxShadow: '0 0 10px rgba(0,0,0,0.1)', backgroundColor: '#fffffe' }}>
                   <div class="icon bg--bleu">
                     <svg xmlns="http://www.w3.org/2000/svg" style={{ color: "white" }} width="22" height="22" fill="currentColor" class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
                       <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
