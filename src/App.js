@@ -36,7 +36,13 @@ function App() {
         const imgX = (pdfWidth - imgWidth *ratio ) / 2;
         const imgY = 0;
         pdf.addImage(imgData,'PNG',imgX,imgY, imgWidth*ratio, imgHeigth*ratio);
-        pdf.save('new.pdf')
+        // pdf.save('new.pdf')
+
+        const image = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream"); // This prompts the user to save it as a file
+        const link = document.createElement('a');
+        link.download = 'canvas-image.png';
+        link.href = image;
+        link.click();
       })
   }
 

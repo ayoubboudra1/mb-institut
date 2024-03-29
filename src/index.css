@@ -42,6 +42,9 @@ header .all-card{
   justify-content: center;
   width: 100%;
 }
+header .all-card .card {
+  background: red;
+}
 header .card{
  
   
