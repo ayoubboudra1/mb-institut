@@ -23,7 +23,9 @@ function App() {
 
   const downloadPdf = (pdfRef) => {
     const input = pdfRef.current
-    html2canvas(input)
+    html2canvas(input,{
+      backgroundColor: '#ffffff',
+    })
       .then(canvas => {
         
         const imgData = canvas.toDataURL('image/png');
